@@ -2,7 +2,7 @@
 ## Team member
  - Kyungmin Kim (Junior Developer)
 
-## Project (On going)
+## Project
  - A book club website where anonymous and shy ghostwriters can write their book diaries and recommend books.
 
 ## Development Tools 
