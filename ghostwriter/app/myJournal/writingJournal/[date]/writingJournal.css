@@ -1,0 +1,134 @@
+.journalBox {
+  position: relative;
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 7%;
+  border-radius: 4rem;
+  height: 45rem;
+}
+
+.journalForm {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.writingBox {
+  position: relative;
+  background-color: #f5f5f5;
+  width: 65%;
+  border-radius: 4rem 0 0 4rem;
+  padding: 4% 10%;
+}
+
+input {
+  margin: 1%;
+  background-color: transparent;
+  border: none;
+}
+
+.date {
+  display: block;
+  font-size: 1.4em;
+}
+
+.journalTitle {
+  font-size: 3em;
+}
+
+.colorButtonContainer {
+  position: relative;
+}
+
+.pickerContainer {
+  position: absolute;
+  top: 40px; /* 버튼 아래로의 거리 조정 */
+  left: 0;
+  z-index: 999; /* ChromPicker를 버튼 위에 올려놓기 */
+}
+
+.colorButton {
+  border: none;
+  background-color: #ffffff;
+  font-size: 1em;
+  border-radius: 8%;
+  margin-left: 1%;
+  margin-bottom: 2%;
+}
+
+/* input[type="checkbox"] {
+  display: none;
+}
+
+.shareLabel {
+  color: #999999;
+}
+
+input[type="checkbox"]:checked + .shareLabel {
+  color: #000000;
+} */
+
+.journal {
+  margin-top: 1%;
+  display: block;
+  resize: none;
+  border: none;
+  margin-left: 1%;
+  font-size: 1em;
+  padding: 1%;
+  line-height: 1.3em;
+  width: 100%;
+  height: 17rem;
+  font-family: "bodoni";
+}
+
+textarea::-webkit-scrollbar {
+  width: 0.3em;
+}
+
+textarea::-webkit-scrollbar-track {
+  /* -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); */
+  background-color: #ffffff;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+.btnSubmit {
+  position: relative;
+  width: 22%;
+  font-size: 1.1em;
+  border: none;
+  background-color: #ff6100;
+  border-radius: 20px;
+  margin-top: 5%;
+  margin-left: 80%;
+}
+.bookBox {
+  margin: 0 auto;
+}
+.bookTitle {
+  display: block;
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 20%;
+  background-color: transparent;
+}
+.bookCover {
+  margin-top: 7%;
+  width: 90%;
+  height: 60%;
+  margin-left: 5%;
+}
+.candyBox {
+  margin-left: 60%;
+}
+.candy {
+  position: absolute;
+  font-size: 1.1em;
+  margin-top: -0.2em;
+  width: 5%;
+}

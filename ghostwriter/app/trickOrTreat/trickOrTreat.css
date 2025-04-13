@@ -1,0 +1,94 @@
+.logo {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+}
+
+.main-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 9%;
+  border-radius: 6rem;
+  background-color: #fff;
+  height: 46rem;
+  height: 100%;
+}
+
+.title {
+  position: relative;
+  font-family: "distillery";
+  font-size: 3em;
+  text-align: center;
+}
+
+.sub-title {
+  font-size: 1.5em;
+  text-align: center;
+  margin: -2.7em 0 0 0;
+}
+
+.candy-image {
+  position: absolute;
+  top: 13.5%;
+  left: 40%;
+  animation: rotate 5s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.listBox {
+  height: 34rem; /* 원하는 고정 높이 설정 */
+  padding-bottom: 10px; /* 아래쪽 패딩 추가 */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.listUl {
+  height: 95%;
+  overflow-y: scroll; /* 세로 방향으로 스크롤바 추가 */
+  overflow-x: hidden; /* 가로 방향 스크롤바는 숨기기 */
+  padding-bottom: 10px; /* 아래쪽 패딩 추가 */
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+/* WebKit 기반 브라우저용 스크롤바 스타일 */
+.listUl::-webkit-scrollbar {
+  width: 3px; /* 스크롤바 너비 설정 */
+}
+
+.listUl::-webkit-scrollbar-thumb {
+  background-color: #f5f5f5; /* 스크롤바의 색상 */
+  border-radius: 15px; /* 스크롤바의 둥근 모서리 */
+}
+
+.listUl::-webkit-scrollbar-track {
+  background-color: #000; /* 스크롤바 트랙(배경)의 색상 */
+  border-radius: 15px; /* 스크롤바의 둥근 모서리 */
+  margin: 100px 0px; /* 스크롤바의 트랙 위아래로 마진 추가 */
+}
+.listLi {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+.journalColor {
+  width: 5px;
+  height: 100px;
+}
+
+.journalTitle {
+  font-size: 1.3em;
+  margin-top: -105px;
+  margin-left: 15px;
+}
+.candy_box {
+  margin-left: 15px;
+  margin-top: -10px;
+}
+.candy_num {
+  width: 50%;
+  margin-top: -32px;
+  margin-left: 45px;
+}

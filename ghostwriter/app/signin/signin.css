@@ -1,0 +1,89 @@
+.logo {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+}
+h4 {
+  font-family: "distillery";
+  font-size: 3em;
+  text-align: center;
+  position: relative;
+  top: -5%;
+}
+.video_box {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+}
+.login_box {
+  position: absolute;
+  right: 5%;
+  top: 10%;
+  width: 30%;
+  height: 80%;
+  background: #ffffff;
+  box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 80px;
+}
+.form_box_s {
+  position: relative;
+  top: -10%;
+  padding: 5% 13% 0 13%;
+  text-align: center;
+}
+.input_password_s,
+.input_email_s {
+  background: #ffffff;
+  border: none;
+  margin-bottom: 4vh;
+  height: 2em;
+  width: 90%;
+  border: 1px solid #ff6100;
+  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.25));
+  border-radius: 5px;
+  font-family: "bodoni";
+}
+input::placeholder {
+  font-family: "bodoni";
+  color: #999999;
+  font-size: 1.1em;
+}
+.btn_submit_s {
+  position: relative;
+  background: #ff6100;
+  border-radius: 30px;
+  border: none;
+  font-family: "distillery";
+  width: 30%;
+  font-size: 1.3em;
+  margin: 0 auto;
+  margin-top: 20vh;
+  display: inline-block;
+}
+.signin_box {
+  position: relative;
+  top: -22%;
+  text-align: center;
+  font-size: 1.15em;
+}
+.signin_box span {
+  font-family: "bodoni";
+}
+.signin_link {
+  font-family: "distillery";
+  text-decoration: none;
+  color: #ff6100;
+}
+.btn_submit {
+  position: relative;
+  background: #ff6100;
+  border-radius: 30px;
+  border: none;
+  font-family: "distillery";
+  width: 30%;
+  font-size: 1.3em;
+  margin: 0 auto;
+  display: inline-block;
+  margin-top: 10rem;
+  transform: translateX(8%);
+}

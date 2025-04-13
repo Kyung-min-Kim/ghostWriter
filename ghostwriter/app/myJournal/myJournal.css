@@ -1,0 +1,259 @@
+.logo {
+  position: absolute;
+  left: -30px;
+  top: -20px;
+}
+
+.calendar-box {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 9%;
+  border-radius: 6rem;
+  background-color: #fff;
+  height: 46rem;
+  height: 100%;
+}
+
+.title {
+  position: relative;
+  font-family: "distillery";
+  font-size: 3em;
+  text-align: center;
+}
+
+/* VARIABLES */
+
+:root {
+  --main-color: #1a8fff;
+  --text-color: #777;
+  --text-color-light: #ccc;
+  --border-color: #eee;
+  --bg-color: #f9f9f9;
+  --neutral-color: #fff;
+}
+
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+}
+
+/* GRID */
+
+.row {
+  margin: 0;
+  padding: 0;
+  /* display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; */
+  display: block;
+  width: 100%;
+}
+
+.row-middle {
+  align-items: center;
+}
+
+.col {
+  flex-grow: 1;
+  flex-basis: 0;
+  max-width: 100%;
+}
+
+.rowBottom {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1%;
+}
+
+.col-start {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.col-center {
+  justify-content: center;
+  text-align: center;
+}
+
+.col-end {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+/* Calendar */
+/* .calendar-box {
+  background-color: #fff;
+  border-radius: 3rem;
+  width: 75%;
+  margin: 0 auto;
+} */
+
+.calendar {
+  display: block;
+  position: relative;
+  width: 90%;
+  background: var(--neutral-color);
+  margin: 0 auto;
+  margin-top: -5%;
+}
+
+.calendar .header {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 130%;
+  padding: 1.5em 0;
+}
+
+.calendar .header .icon {
+  cursor: pointer;
+  transition: 0.15s ease-out;
+  font-size: 0.7em;
+}
+
+.calendar .header .icon:hover {
+  /*transform: scale(1.75);*/
+  transition: 0.25s ease-out;
+  color: #ff6100;
+}
+
+.calendar .header .icon:first-of-type {
+  margin-left: 5em;
+}
+
+.calendar .header .icon:last-of-type {
+  margin-right: 5em;
+}
+
+.calendar .body .cell {
+  position: relative;
+  height: 3.2em;
+  /* overflow: hidden; */
+  cursor: pointer;
+  transition: 0.25s ease-out;
+  font-size: 1.5em;
+  width: 100%;
+  border-bottom: 1px solid;
+}
+
+.calendar .body .cell:hover {
+  background: var(--bg-color);
+  transition: 0.5s ease-out;
+  border-left: 5px solid transparent;
+  border-image: linear-gradient(45deg, #000000 0%, #000000 40%);
+  border-image-slice: 1;
+}
+
+.calendar .body .today {
+  border-left: 5px solid transparent;
+  border-image: linear-gradient(45deg, #ff6100 0%, #ff6100 40%);
+  border-image-slice: 1;
+}
+/* .calendar .body .row {
+  border-bottom: 1px solid var(--border-color);
+} */
+
+.calendar .body .row:last-child {
+  border-bottom: none;
+}
+
+.calendar .body .cell:last-child {
+  border-bottom: none;
+}
+.calendar .body .cell:first-child {
+  border-top: 1px solid;
+}
+.calendar .body .cell .date {
+  position: relative;
+  display: block;
+  width: 20%;
+  height: 100%;
+  color: black;
+}
+.calendar .body .cell .number {
+  position: absolute;
+  font-size: 2.1em;
+  top: 10%;
+  left: 3%;
+  line-height: 1;
+  font-weight: 200;
+}
+
+.calendar .days {
+  display: block;
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 0.5em;
+  top: 65%;
+  left: 3%;
+}
+
+.calendar .body .disabled {
+  color: var(--text-color-light);
+  pointer-events: none;
+}
+
+/* .calendar .body .cell .bg {
+  font-weight: 700;
+  line-height: 1;
+  color: var(--main-color);
+  opacity: 0;
+  font-size: 8em;
+  position: absolute;
+  top: -0.2em;
+  right: -0.05em;
+  transition: 0.25s ease-out;
+  letter-spacing: -0.07em;
+}
+
+.calendar .body .cell:hover .bg,
+.calendar .body .selected .bg {
+  opacity: 0.05;
+  transition: 0.5s ease-in;
+}
+.calendar .body .cell.today .bg {
+  color: #ff1a79;
+  opacity: 0.05;
+} */
+
+/* .calendar .body .col {
+  flex-grow: 0;
+  flex-basis: calc(100% / 7);
+  width: calc(100% / 7);
+} */
+
+/* .entry-indicator {
+  position: relative;
+  display: block;
+  height: 4.8rem;
+  width: 0.4%;
+  margin-left: 5%;
+  background-color: black;
+} */
+
+.journal-entry-indicator {
+  position: relative;
+  display: block;
+  height: 4.77rem;
+  width: 3%;
+  margin-left: 30%;
+  z-index: 100000;
+}
+.image-preview {
+  position: relative;
+  margin-left: 5px;
+}
+.bookCoverLst {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+  width: 2em;
+}
+.journal-entry-indicator:hover .bookCoverLst {
+  opacity: 1;
+}
