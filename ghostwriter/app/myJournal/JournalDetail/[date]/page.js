@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import "./writingJournal.css";
+import "../../writingJournal/[date]/writingJournal.css";
 import "../../../globals.css";
 import Image from "next/image";
 import Link from "next/link";

@@ -1,3 +1,4 @@
+"use client";
 import "./register.css";
 import "../globals.css";
 import Image from "next/image";

@@ -1,3 +1,4 @@
+"use client";
 import React, { useState } from "react";
 import { ChromePicker } from "react-color";
 

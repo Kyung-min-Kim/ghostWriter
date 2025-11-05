@@ -1,9 +1,10 @@
-import "./writingJournal.css";
+"use client";
+import "../../writingJournal/[date]/writingJournal.css";
 import "../../../globals.css";
 import Image from "next/image";
 import Link from "next/link";
 import Video from "next-video";
-import ColorPicker from "./colorPicker";
+import ColorPicker from "../../writingJournal/[date]/colorPicker";
 import React, { useState, useEffect } from "react";
 
 const WritingJournal = (req) => {

@@ -251,13 +251,15 @@ body {
   font-size: 1.3em;
   font-weight: 100;
   margin: 5%;
+  position: absolute;
+  top: -1%;
 }
 .slide3_swiper .slide3_p_1 {
-  position: relative;
+  position: absolute;
   font-weight: 100;
   width: 50%;
   left: 40%;
-  top: 10%;
+  top: 30%;
 }
 .slide3_swiper .slide3_p_number {
   position: absolute;
@@ -288,12 +290,8 @@ body {
   top: 10%;
   border-radius: 50px;
 }
-.slide3_swiper .slide3_p_2,
-.slide3_swiper .slide3_p_3,
-.slide3_swiper .slide3_p_4,
-.slide3_swiper .slide3_p_5,
-.slide3_swiper .slide3_p_6 {
-  position: relative;
+.slide3_swiper .slide3_p_2 {
+  position: absolute;
   width: 60%;
   font-weight: 100;
   margin-left: 10%;
@@ -301,18 +299,35 @@ body {
   font-family: "bodoni";
   line-height: 1.5em;
   font-size: 0.9em;
+  top: 18%;
+  left: 1%;
+}
+.slide3_swiper .slide3_p_3,
+.slide3_swiper .slide3_p_4,
+.slide3_swiper .slide3_p_5,
+.slide3_swiper .slide3_p_6 {
+  position: absolute;
+  width: 60%;
+  font-weight: 100;
+  margin-left: 10%;
+  text-align: left;
+  font-family: "bodoni";
+  line-height: 1.5em;
+  font-size: 0.9em;
+  top: 28%;
+  left: 1%;
 }
 .slide3_swiper .white_ghost {
-  position: relative;
-  top: 10%;
+  position: absolute;
+  top: 70%;
   left: -5%;
   transition: top 0.5s ease-in-out;
 }
 .slide3_swiper .white_ghost:hover {
-  top: -10%;
+  top: 90%;
 }
 .slide3_swiper .slide3_span {
-  position: relative;
+  position: absolute;
   font-weight: 100;
   font-family: "bodoni";
   font-size: 0.8vw;
@@ -322,6 +337,8 @@ body {
   margin-top: -5%;
   text-align: left;
   line-height: 1.4em;
+  top: 55%;
+  left: 1%;
 }
 .slide3_swiper .slide3_p_3 {
   width: 80%;
@@ -329,17 +346,15 @@ body {
   margin-top: -5%;
   font-size: 0.9em;
 }
-.slide3_swiper .link_myreadingjournal {
+.slide3_swiper .link_myreadingjournal,
+.slide3_swiper .link_bookclub {
   position: relative;
   background-color: #ff6100;
   padding: 3% 4.5%;
   border-radius: 50px;
-  top: 3%;
-  left: -12%;
+  top: 28%;
 }
-.slide3_swiper .slide3_p_4 {
-  margin-top: -5%;
-}
+
 .slide3_swiper .candy_image {
   position: absolute;
   top: 40%;
@@ -351,20 +366,11 @@ body {
     transform: rotate(360deg);
   }
 }
-.slide3_swiper .link_bookclub {
-  position: relative;
-  background-color: #ff6100;
-  padding: 3% 4%;
-  border-radius: 50px;
-  top: 3%;
-}
+
 .slide3_swiper .feather_image {
   position: absolute;
   top: 30%;
   right: -5%;
-}
-.slide3_swiper .slide3_p_6 {
-  margin-top: 20%;
 }
 .slide3_swiper .small_ghost {
   position: absolute;
@@ -373,6 +379,33 @@ body {
   animation: swingLast ease-in-out 1s infinite alternate;
   transform-origin: center;
 }
+
+html,
+body {
+  height: 100%;
+}
+
+.mySwiper {
+  height: 100vh;
+}
+
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  height: 100%;
+}
+
+.slide2_swiper,
+.slide3_swiper {
+  height: 60%;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes swingLast {
   0% {
     transform: rotate(5deg);
